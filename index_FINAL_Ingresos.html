@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+
+<head>
+	<title>TESORERIA INGRESOS</title>
+	<meta charset="UTF-8">
+
+	<script type="text/javascript" src="script_principal.js"></script>
+	<script type="text/javascript" src="script_salidas_egresos.js"></script>
+	<script type="text/javascript" src="script_monto_ingreso.js"></script>
+	<script type="text/javascript" src="saldoActual.js"></script>
+	<script type="text/javascript" src="script_mostrar_ingresos.js"></script>
+	<script type="text/javascript" src="script_mostrar_Egresos.js"></script>
+</head>
+<body>
+	<fieldset>	
+		<p><label> fecha  		: <input type="text" name="fecha" id="fecha"></label></p>
+		<p><label> Codigo  		: <input type="number" name="codigo" id="codigo"></label></p>
+		<p><label> Detalle  		: <input type="text" name="detalle" id="detalle"></label></p>
+		<p><label> Monto  Ingresado	: <input type="text" name="monto" id="monto"></label></p>
+
+
+        
+        <p><label> fecha de Salida : <input type="text" name="fechaS" id="fechaS"></label></p>
+        <p><label> Codigo de Salida : <input type="text" name="codigoS" id="codigoS"></label></p>
+        <p><label> Detalle de Salida : <input type="text" name="detalleS" id="detalleS"></label></p>
+		<p><label> Monto de Salidas	: <input type="text" name="salidas" id="salidas"></label></p>
+
+		<button id="boton1" onclick="main()">AGREGAR</button>
+		<button id="boton1" onclick="actualizar()">ACTUALIZAR_SALDOS</button>
+		<button id="boton2"  onclick="eliminar()"> ELIMINAR</button>
+		<button id="boton3"  onclick="mostrar_ingresos()">MOSTRAR INGRESOS</button>
+		<button id="boton3"  onclick="mostrar_egresos()">MOSTRAR EGRESOS</button>
+		<button id="boton3"  onclick="Egreso()">AGREGAR SALIDAS</button>
+	</fieldset>
+	<fieldset>
+
+		<div id="ImprimirFecha"></div>
+		
+		<div id="ImprimirCodigo"></div>
+		
+		<div id="ImprimirDetalle"></div>
+		
+		<div id="ImprimirMonto"></div>
+		
+		
+		<div id="ImprimirFechaSalida"></div>
+        <div id="ImprimirCodigoSalida"></div>
+		<div id="ImprimirDetalleSalida"></div>
+		<div id="ImprimirSalidas"></div>
+		<div id="ImprimirSaldoActual"></div>
+	</fieldset>
+
+</body>
+</html>

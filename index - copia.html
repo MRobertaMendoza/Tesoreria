@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+
+<head>
+	<title>TESORERIA</title>
+	<meta charset="UTF-8">
+
+	
+	<script type="text/javascript" src="Prueba_Vector_LocalStorage.js"></script>
+</head>
+<body>
+	<fieldset>	
+		<p><label> fecha  		: <input type="text" name="fecha" id="fecha"></label></p>
+		<p><label> Codigo  		: <input type="number" name="codigo" id="codigo"></label></p>
+		<p><label> Detalle  		: <input type="text" name="detalle" id="detalle"></label></p>
+		<p><label> Debe  		: <input type="number" name="debe" id="debe"></label></p>
+		<p><label> Haber  		: <input type="number" name="haber" id="haber"></label></p>
+
+		<button id="boton1" onclick="main()">Agregar</button>
+		<button id="boton2"  onclick="eliminar()"> Eliminar</button>
+		<button id="boton3"  onclick="mostrar()">Mostrar</button>
+	</fieldset>
+	<fieldset>
+
+		<div id="ImprimirFecha"></div>
+		<div id="ImprimirCodigo"></div>
+		<div id="ImprimirDebe"></div>
+			
+	</fieldset>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+
+<head>
+	<title>TESORERIA EGRESOS</title>
+	<meta charset="UTF-8">
+
+	<script type="text/javascript" src="script_principal.js"></script>
+	<script type="text/javascript" src="script_salidas_egresos.js"></script>
+	<script type="text/javascript" src="script_monto_ingreso.js"></script>
+	<script type="text/javascript" src="saldoActual.js"></script>
+	<script type="text/javascript" src="script_mostrar.js"></script>
+</head>
+<body>
+	<fieldset>	
+		<p><label> fecha  		: <input type="text" name="fecha" id="fecha"></label></p>
+		<p><label> Codigo  		: <input type="number" name="codigo" id="codigo"></label></p>
+		<p><label> Detalle  		: <input type="text" name="detalle" id="detalle"></label></p>
+		<p><label> Salidas	: <input type="text" name="salidas" id="salidas"></label></p>
+
+		<button id="boton1" onclick="main()">AGREGAR</button>
+		<button id="boton1" onclick="actualizar()">ACTUALIZAR_SALDOS</button>
+		<button id="boton2"  onclick="eliminar()"> ELIMINAR</button>
+		<button id="boton3"  onclick="mostrar()">MOSTRAR</button>
+		<button id="boton3"  onclick="Egreso()">SALIDAS</button>
+	</fieldset>
+	<fieldset>
+
+		<div id="ImprimirFechaE"></div>
+		<div id="ImprimirCodigoE"></div>
+		<div id="ImprimirDetalleE"></div>
+		<div id="ImprimirMonto"></div>
+		<div id="ImprimirSalidas"></div>
+		<div id="ImprimirSaldoActual"></div>
+			
+	</fieldset>
+
+</body>
+</html>
